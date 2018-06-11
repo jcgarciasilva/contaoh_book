@@ -1,0 +1,20 @@
+{
+  "name": "contatooh",
+  "description": "teste para MEAN Stac",
+  "main": "server.js",
+  "authors": [
+    "jgarcia <joao.garcia-external@alianca.com.br>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jcgarciasilva/contaoh_book",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3"
+  }
+}
