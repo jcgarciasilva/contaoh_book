@@ -13,7 +13,7 @@ angular.module('contatooh').controller('ContatosController', function ($scope, C
                 $scope.contatos = contatos;
             },
             function (erro) {
-                console.log("Não	foi	possível	obter	a	lista	de	 contatos");
+                console.log("Não foi	possível	obter	a	lista	de	 contatos");
                 console.log(erro);
             }
         );
