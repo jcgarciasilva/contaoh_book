@@ -1,9 +1,8 @@
 var http = require('http');
-var app = require('./config/express')();
-require('./config/passport')(); 
-require('./config/database.js')('mongodb://localhost/contatooh');
-
+var express = require('express');
+var app = require('./config/express') ();
+require('./config/passport')();
+require('./config/database')('mongodb://localhost/contatooh');
 http.createServer(app).listen(app.get('port'), function () {
-    let port = app.get('port');
-    console.log(`Express	Server	escutando	na	porta ${port}`);
+    console.log('Express	Server	escutando	na	porta	' +    app.get('port'));
 });

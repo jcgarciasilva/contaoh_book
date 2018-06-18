@@ -7,6 +7,8 @@ angular.module('contatooh').controller('ContatosController', function ($scope, C
         $scope.total++;
     };
 
+    console.log('iniciou');
+
     function buscaContatos() {
         Contato.query(
             function (contatos) {

@@ -13,11 +13,13 @@ module.exports = function () {
             type: String,
             required: true,
         },
-        inclusao: {
-            type: Date,
-            default: Date.now
-        }
+            inclusao: {
+                type: Date,
+                default: Date.now
+            }
     });
     schema.plugin(findOrCreate);
+    console.log('antes de registrar');
+    
     return mongoose.model('Usuario', schema);
 };
