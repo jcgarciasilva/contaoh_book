@@ -23,8 +23,8 @@ angular.module('contatooh').controller('ContatosController', function ($scope, C
     buscaContatos();
 
     $scope.remove = function (contato) {
-        let promise = Contato.delete({ id: contato._id }).$promise;
-        promise
+        var pro = Contato.delete({ id: contato._id }).$promise;
+        pro
             .then(buscaContatos)
             .catch(function (erro) {
                 console.log("Não	foi	possível	remover	o	contato");
